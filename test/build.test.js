@@ -28,4 +28,20 @@ describe('buildReadme', () => {
     assert.ok(md.includes('testuser'));
     assert.ok(md.includes('About Me'));
   });
+
+  it('safely defaults theme if theme is not provided', () => {
+    const answers = {
+      name: 'Test User',
+      username: 'testuser',
+      tagline: 'tagline',
+      bio: 'short bio',
+      focus: ['AI'],
+      tech: ['js'],
+      linkedin: '',
+      portfolio: '',
+      projects: [],
+    };
+    const md = buildReadme(answers);
+    assert.ok(md.includes('dracula'));
+  });
 });

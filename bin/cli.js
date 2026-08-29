@@ -88,7 +88,8 @@ ${techBadges(p.tech.split(","))}
 }
 
 function buildReadme(answers) {
-  const t = THEME_TABLE[answers.theme];
+  const themeKey = answers.theme && THEME_TABLE[answers.theme] ? answers.theme : "dracula";
+  const t = THEME_TABLE[themeKey];
   const focusRows = [];
   for (let i = 0; i < answers.focus.length; i += 2) {
     const a = answers.focus[i] || "";
@@ -100,6 +101,7 @@ function buildReadme(answers) {
   socialBadges.push(
     `<a href="https://github.com/${answers.username}" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="GitHub"/></a>`
   );
+
   if (answers.linkedin) {
     socialBadges.push(
       `<a href="${answers.linkedin}" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" alt="LinkedIn"/></a>`
@@ -278,6 +280,7 @@ async function main() {
           { title: "Radical (pink / gold)", value: "radical" },
           { title: "Dracula (purple / cyan)", value: "dracula" },
         ],
+        initial: 2,
       },
       { type: "text", name: "linkedin", message: "LinkedIn URL (optional, press enter to skip)" },
       { type: "text", name: "portfolio", message: "Portfolio URL (optional, press enter to skip)" },
