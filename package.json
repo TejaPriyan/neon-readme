@@ -1,6 +1,6 @@
 {
   "name": "neon-readme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate a premium, dark-neon-themed GitHub profile README in under a minute — with every widget checked against a currently-working endpoint, not just copy-pasted from stale docs.",
   "type": "module",
   "bin": {
