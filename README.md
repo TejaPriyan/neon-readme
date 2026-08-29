@@ -13,17 +13,16 @@ Generate a premium, dark-neon-themed GitHub profile README in under a minute. Th
 
 ## 🚀 Quick Start
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+### Run directly with `npx` (No installation needed)
+```bash
+npx neon-readme
+```
 
-2. **Run the generator**:
-   ```bash
-   npm start
-   # or
-   node ./bin/cli.js
-   ```
+### Or run locally:
+```bash
+npm install
+npm start
+```
 
 3. **Follow the prompts**:
    Enter your name, GitHub username, role, focus areas, tech stack, theme, and optional projects/socials.

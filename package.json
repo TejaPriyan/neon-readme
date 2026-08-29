@@ -30,9 +30,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TejaPriyan007/neon-readme.git"
+    "url": "git+https://github.com/TejaPriyan/neon-readme.git"
   },
-  "homepage": "https://github.com/TejaPriyan007/neon-readme#readme",
+  "homepage": "https://github.com/TejaPriyan/neon-readme#readme",
   "dependencies": {
     "picocolors": "^1.1.1",
     "prompts": "^2.4.2"
