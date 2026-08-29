@@ -1,0 +1,40 @@
+{
+  "name": "neon-readme",
+  "version": "1.0.2",
+  "description": "Generate a premium, dark-neon-themed GitHub profile README in under a minute — with every widget checked against a currently-working endpoint, not just copy-pasted from stale docs.",
+  "type": "module",
+  "bin": {
+    "neon-readme": "bin/cli.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "keywords": [
+    "readme",
+    "github-readme",
+    "github-profile",
+    "readme-generator",
+    "cli",
+    "developer-portfolio"
+  ],
+  "author": "Teja Priyan",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js",
+    "test": "node --test",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TejaPriyan007/neon-readme.git"
+  },
+  "homepage": "https://github.com/TejaPriyan007/neon-readme#readme",
+  "dependencies": {
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2"
+  }
+}
